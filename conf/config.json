@@ -1,0 +1,37 @@
+{
+  "tasks": [
+    {
+      "name": "EDO"
+    },
+    {
+      "name": "Dictionary"
+    }
+  ],
+  "lists": [
+    {
+      "task": "EDO",
+      "obj": "\\path\file.log",
+      "datetime": "2012-04-23T18:25:43.511Z",
+      "fresh": 1
+    },
+    {
+      "task": "EDO",
+      "obj": "\\path\file.exe",
+      "datetime": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "task": "Dictionary",
+      "obj": "\\path\file.log",
+      "datetime": "2012-04-23T18:25:43.511Z",
+      "fresh": 1
+    },
+    {
+      "task": "Dictionary",
+      "obj": "\\path\file.exe",
+      "datetime": "2012-04-23T18:25:43.511Z"
+    }
+  ],
+  "dp": {
+    "name": "TestDP"
+  }
+}
