@@ -17,12 +17,5 @@ describe("Test dp routing", () => {
         done();
       });
     });
-    it("returns new post value", (done) => {
-      request.post({url:urldp, form: {name:'TestDP'}} , (error, response, body) => {
-        var jsonBody = JSON.parse(body);
-        expect(jsonBody.dp.name).toBe('TestDP');
-        done();
-      });
-    });
   });
 });

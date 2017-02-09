@@ -10,5 +10,30 @@ describe("Test dp routing", () => {
         done();
       });
     });
-   }); 
+   });
+    describe("POST /tasks",  () => {
+    it("returns status code 200", (done) => {
+      request.post({url:urltasks, form: {name:'TestTask'}} , (error, response, body) => {
+        expect(response.statusCode).toBe(200);
+        done();
+      });
+    });
+  });
+   describe("DELETE /tasks",  () => {
+    it("returns status code 200", (done) => {
+      
+      request.delete({url:urltasks, form: {name:'TestTask'}} , (error, response, body) => {
+        expect(response.statusCode).toBe(200);
+        done();
+      });
+    });
+  });  
+   describe("DELETE /tasks",  () => {
+    it("returns status code 404", (done) => {
+      request.delete({url:urltasks, form: {name:'UnknownTask'}} , (error, response, body) => {
+        expect(response.statusCode).toBe(404);
+        done();
+      });
+    });
+    });  
 });

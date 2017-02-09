@@ -15,6 +15,6 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
   const post = db.set('dp',req.body)
     .value();
-  res.send(post);
+  res.sendStatus(200);
 })
 module.exports = router; 
